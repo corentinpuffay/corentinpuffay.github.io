@@ -7,106 +7,156 @@
     /* Global Styles */
     body {
       font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background-color: #f8f9fa;
       margin: 0;
       padding: 0;
+      background-color: #fff;
       color: #222;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+      line-height: 1.6;
       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
-    .container {
-      max-width: 900px;
-      width: 90%;
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-      padding: 50px 30px;
-      text-align: center;
+    a {
+      color: #007acc;
+      text-decoration: none;
     }
 
-    img.profile {
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 40px 60px;
+      border-bottom: 1px solid #eaeaea;
+      flex-wrap: wrap;
+    }
+
+    header img.profile {
       width: 160px;
       height: 160px;
-      object-fit: cover;
       border-radius: 50%;
-      margin-bottom: 20px;
-      border: 4px solid #007acc;
+      object-fit: cover;
+      margin-right: 40px;
+      border: 2px solid #007acc;
     }
 
-    h1 {
+    header div.header-text h1 {
+      margin: 0;
       font-size: 2.5em;
-      margin-bottom: 5px;
       color: #007acc;
     }
 
-    .subtitle {
+    header div.header-text .subtitle {
       font-size: 1.2em;
       color: #555;
-      margin-bottom: 30px;
+      margin-top: 8px;
     }
 
-    p {
-      line-height: 1.6;
-      color: #444;
+    main {
+      flex: 1;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 60px;
+    }
+
+    .about {
+      margin-bottom: 50px;
+    }
+
+    .about p {
+      margin-bottom: 1em;
     }
 
     .button-group {
       display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 40px;
       flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
     }
 
     .button {
-      display: inline-block;
-      padding: 14px 28px;
-      font-size: 16px;
+      padding: 10px 20px;
+      font-size: 15px;
+      border-radius: 8px;
+      border: 1px solid #007acc;
+      background-color: #fff;
+      color: #007acc;
       font-weight: 500;
-      color: #fff;
-      background: linear-gradient(135deg, #007acc, #005f99);
-      border-radius: 12px;
-      text-decoration: none;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       transition: all 0.2s ease;
+      text-decoration: none;
     }
 
     .button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      background-color: #007acc;
+      color: #fff;
     }
 
-    @media(max-width: 600px) {
-      .button-group {
+    footer {
+      padding: 20px 60px;
+      text-align: center;
+      border-top: 1px solid #eaeaea;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      header {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
       }
-      .button {
-        width: 100%;
+      header img.profile {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      main {
+        padding: 0 30px;
+      }
+      .button-group {
+        justify-content: center;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+
+  <header>
     <img src="profile.jpg" alt="Corentin Puffay" class="profile">
-    <h1>Corentin Puffay</h1>
-    <div class="subtitle">Neuroscience & AI Researcher</div>
-
-    <p>
-      I am a postdoctoral researcher at KU Leuven with a strong interest in neuroscience and artificial intelligence. 
-      My research focuses on linking speech representations to brain responses using EEG and invasive recordings, 
-      and I also leverage large language models to study language processing in the human brain.
-    </p>
-
-    <div class="button-group">
-      <a href="publications.html" class="button">📚 Publications</a>
-      <a href="CV_Corentin.pdf" class="button">📄 CV</a>
-      <a href="https://github.com/corentinpuffay" class="button" target="_blank">💻 GitHub</a>
+    <div class="header-text">
+      <h1>Corentin Puffay</h1>
+      <div class="subtitle">Neuroscience & AI Researcher</div>
+      <div class="button-group">
+        <a href="publications.html" class="button">Publications</a>
+        <a href="CV_Corentin.pdf" class="button">CV</a>
+        <a href="https://github.com/corentinpuffay" class="button" target="_blank">GitHub</a>
+      </div>
     </div>
-  </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <p>
+        I am a postdoctoral researcher at KU Leuven with a strong interest in neuroscience and artificial intelligence. 
+        I am affiliated with the ExpORL group (<a href="https://www.kuleuven.be/english/research/people/tom-francart" target="_blank">Prof. Tom Francart</a>) 
+        and the PSI group (<a href="https://www.kuleuven.be/wieiswie/en/person/00040707" target="_blank">Prof. Hugo Van Hamme</a>).
+      </p>
+      <p>
+        My research focuses on modeling language processing in the human brain by linking speech representations to brain responses measured through EEG and invasive recordings. 
+        I also leverage large language models to generate speech representations, capturing aspects of language processing similar to those in the human brain.
+      </p>
+      <p>
+        In June 2025, I obtained my Ph.D. in Electrical Engineering & Biomedical Sciences, focusing on relating continuous speech to brain signals using deep learning architectures, 
+        ranging from convolutional networks to transformers. I also apply my models to study speech processing in different populations, including aphasia and epilepsy.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Corentin Puffay
+  </footer>
+
 </body>
 </html>
