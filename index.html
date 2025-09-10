@@ -4,109 +4,104 @@
   <meta charset="UTF-8">
   <title>Corentin Puffay</title>
   <style>
-    /* Modern font */
+    /* Global Styles */
     body {
-      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f8f9fa;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #f0f4f9, #dce6f5);
-      color: #333;
+      color: #222;
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       min-height: 100vh;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 900px;
+      width: 90%;
       background: #fff;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      padding: 50px 30px;
       text-align: center;
     }
 
+    img.profile {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #007acc;
+    }
+
     h1 {
-      color: #005f99;
       font-size: 2.5em;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
+      color: #007acc;
     }
 
     .subtitle {
       font-size: 1.2em;
-      color: #666;
-      margin-bottom: 20px;
-    }
-
-    .profile-pic {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      object-fit: cover;
+      color: #555;
       margin-bottom: 30px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
 
-    .content {
-      text-align: left;
+    p {
       line-height: 1.6;
-      margin-bottom: 40px;
+      color: #444;
     }
 
     .button-group {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
       gap: 20px;
+      margin-top: 40px;
+      flex-wrap: wrap;
     }
 
     .button {
       display: inline-block;
-      padding: 15px 30px;
-      font-size: 18px;
+      padding: 14px 28px;
+      font-size: 16px;
       font-weight: 500;
-      color: white;
+      color: #fff;
       background: linear-gradient(135deg, #007acc, #005f99);
       border-radius: 12px;
       text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: all 0.2s ease;
     }
 
     .button:hover {
       transform: translateY(-3px);
-      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    @media(max-width: 600px) {
+      .button-group {
+        flex-direction: column;
+      }
+      .button {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <img src="profile.jpg" alt="Corentin Puffay" class="profile">
     <h1>Corentin Puffay</h1>
     <div class="subtitle">Neuroscience & AI Researcher</div>
 
-    <!-- Profile picture -->
-    <img src="profile.jpg" alt="Corentin Puffay" class="profile-pic">
+    <p>
+      I am a postdoctoral researcher at KU Leuven with a strong interest in neuroscience and artificial intelligence. 
+      My research focuses on linking speech representations to brain responses using EEG and invasive recordings, 
+      and I also leverage large language models to study language processing in the human brain.
+    </p>
 
-    <div class="content">
-      <p>
-        I am a postdoctoral researcher at KU Leuven with a strong interest in Neuroscience and Artificial Intelligence. 
-        I am affiliated with both the ExpORL group (<a href="https://www.kuleuven.be/english/research/people/tom-francart" target="_blank">Prof. Tom Francart</a>) 
-        and the PSI group (<a href="https://www.kuleuven.be/wieiswie/en/person/00040707" target="_blank">Prof. Hugo Van Hamme</a>). 
-        My research focuses on modeling language processing in the human brain by training machine learning models to link speech representations 
-        with brain responses measured through Electroencephalography (EEG) and invasive recordings. Additionally, I leverage Large Language Models (LLMs) 
-        to generate speech representations, as they appear to capture aspects of language processing similar to those in the human brain. 
-        I visited the lab of Prof. <a href="https://nima.ee.columbia.edu/" target="_blank">Prof. Nima Mesgarani</a> at Columbia University in June 2024. 
-      </p>
-      <p>
-        In June 2025, I obtained my Ph.D. degree in Electrical Engineering & Biomedical Sciences, 
-        focusing on relating continuous speech to brain signals (EEG, and invasive recordings) using novel deep learning architectures 
-        ranging from convolutional networks to transformers. After developing models using different speech 
-        representations, reflecting language and auditory processing, I could leverage my models to investigate 
-        speech processing in different populations (e.g., aphasia and epilepsy).
-      </p>
-    </div>
-
-    <!-- Buttons -->
     <div class="button-group">
       <a href="publications.html" class="button">📚 Publications</a>
       <a href="CV_Corentin.pdf" class="button">📄 CV</a>
