@@ -11,10 +11,11 @@
       padding: 0;
       background-color: #fff;
       color: #222;
-      line-height: 1.6;
+      line-height: 1.7;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      font-size: 18px; /* Increased base font size */
     }
 
     a {
@@ -29,36 +30,36 @@
     header {
       display: flex;
       align-items: center;
-      padding: 40px 60px;
+      padding: 50px 60px;
       border-bottom: 1px solid #eaeaea;
       flex-wrap: wrap;
     }
 
     header img.profile {
-      width: 160px;
-      height: 160px;
+      width: 180px; /* Slightly larger */
+      height: 180px;
       border-radius: 50%;
       object-fit: cover;
-      margin-right: 40px;
+      margin-right: 50px;
       border: 2px solid #007acc;
     }
 
     header div.header-text h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em; /* Increased heading size */
       color: #007acc;
     }
 
     header div.header-text .subtitle {
-      font-size: 1.2em;
+      font-size: 1.5em; /* Increased subtitle size */
       color: #555;
-      margin-top: 8px;
+      margin-top: 10px;
     }
 
     main {
       flex: 1;
       max-width: 1000px;
-      margin: 40px auto;
+      margin: 50px auto;
       padding: 0 60px;
     }
 
@@ -66,8 +67,17 @@
       margin-bottom: 50px;
     }
 
+    .about h2 {
+      font-size: 2em; /* Section title size */
+      margin-bottom: 20px;
+      color: #007acc;
+      border-bottom: 2px solid #eaeaea;
+      padding-bottom: 5px;
+    }
+
     .about p {
-      margin-bottom: 1em;
+      margin-bottom: 1.2em;
+      font-size: 1.1em; /* Slightly larger paragraph text */
     }
 
     .button-group {
@@ -78,8 +88,8 @@
     }
 
     .button {
-      padding: 10px 20px;
-      font-size: 15px;
+      padding: 12px 24px; /* Slightly larger buttons */
+      font-size: 16px;
       border-radius: 8px;
       border: 1px solid #007acc;
       background-color: #fff;
@@ -95,10 +105,10 @@
     }
 
     footer {
-      padding: 20px 60px;
+      padding: 25px 60px;
       text-align: center;
       border-top: 1px solid #eaeaea;
-      font-size: 0.9em;
+      font-size: 1em;
       color: #555;
     }
 
@@ -138,6 +148,7 @@
 
   <main>
     <section class="about">
+      <h2>About me</h2>
       <p>
         I am a postdoctoral researcher at KU Leuven with a strong interest in neuroscience and artificial intelligence. 
         I am affiliated with the ExpORL group (<a href="https://www.kuleuven.be/english/research/people/tom-francart" target="_blank">Prof. Tom Francart</a>) 
