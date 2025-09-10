@@ -26,6 +26,15 @@
       text-align: center;
     }
 
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
     h1 {
       color: #005f99;
       font-size: 2.5em;
@@ -72,6 +81,9 @@
 </head>
 <body>
   <div class="container">
+    <!-- Profile picture -->
+    <img src="profile.jpg" alt="Corentin Puffay" class="profile-pic">
+
     <h1>Corentin Puffay</h1>
     <div class="subtitle">Neuroscience & AI Researcher</div>
 
@@ -79,7 +91,7 @@
       <p>
         I am a postdoctoral researcher at KU Leuven with a strong interest in Neuroscience and Artificial Intelligence. 
         I am affiliated with both the ExpORL group (<a href="https://www.kuleuven.be/english/research/people/tom-francart" target="_blank">Prof. Tom Francart</a>) 
-        and the PSI group (<a href="https://www.kuleuven.be/wieiswie/en/person/00040707" target="_blank">Prof. Hugo Van hamme</a>). 
+        and the PSI group (<a href="https://www.kuleuven.be/wieiswie/en/person/00040707" target="_blank">Prof. Hugo Van Hamme</a>). 
         My research focuses on modeling language processing in the human brain by training machine learning models to link speech representations 
         with brain responses measured through Electroencephalography (EEG) and invasive recordings. Additionally, I leverage Large Language Models (LLMs) 
         to generate speech representations, as they appear to capture aspects of language processing similar to those in the human brain. 
@@ -91,9 +103,6 @@
         ranging from convolutional networks to transformers. After developing models using different speech 
         representations, reflecting language and auditory processing, I could leverage my models to investigate 
         speech processing in different populations (e.g., aphasia and epilepsy).
-      </p>
-      <p>
-
       </p>
     </div>
 
