@@ -60,6 +60,7 @@
       background: linear-gradient(135deg, #007acc, #005f99);
       box-shadow: 0 3px 8px rgba(0,0,0,0.1);
       transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
     }
 
     .pub-button:hover {
@@ -84,11 +85,11 @@
   <div class="pub-card">
     <div class="pub-title">Relating the fundamental frequency of speech using a dilated convolutional network</div>
     <div class="pub-authors"><b>C. Puffay</b>, J. Van Canneyt, J. Vanthornhout, H. Van Hamme, T. Francart</div>
-    <div class="pub-journal">Proc. Interspeech 2022. DOI: 10.21437/Interspeech.2022-315</div>
+    <div class="pub-journal">Proc. Interspeech 2022</div>
     <div class="pub-buttons">
       <a href="https://doi.org/10.21437/Interspeech.2022-315" target="_blank" class="pub-button">DOI</a>
-      <button class="pub-button" onclick="alert('@article{puffay2022,\ntitle={Relating the fundamental frequency of speech using a dilated convolutional network},\nauthor={Puffay, Corentin and Van Canneyt, J and Vanthornhout, J and Van Hamme, H and Francart, T},\njournal={Proc. Interspeech 2022},\nyear={2022}\n}')">Cite</button>
-      <a href="paper1.pdf" target="_blank" class="pub-button">PDF</a>
+      <button class="pub-button" onclick="alert('@inproceedings{puffay2022,\ntitle={Relating the fundamental frequency of speech using a dilated convolutional network},\nauthor={Puffay, Corentin and Van Canneyt, J and Vanthornhout, J and Van Hamme, H and Francart, T},\nbooktitle={Proc. Interspeech 2022},\nyear={2022}\n}')">Cite</button>
+      <a href="#" class="pub-button">PDF</a>
     </div>
   </div>
 
@@ -100,12 +101,50 @@
     <div class="pub-buttons">
       <a href="#" target="_blank" class="pub-button">DOI</a>
       <button class="pub-button" onclick="alert('@article{puffay2023review,\ntitle={Relating EEG to continuous speech using deep neural networks: a review},\nauthor={Puffay, Corentin and Accou, B and Bollens, L and Monesi, MJ and Vanthornhout, J and Van Hamme, H and Francart, T},\njournal={Journal of Neural Engineering},\nyear={2023}\n}')">Cite</button>
-      <a href="paper2.pdf" target="_blank" class="pub-button">PDF</a>
+      <a href="#" class="pub-button">PDF</a>
     </div>
   </div>
 
-  <!-- Add more publications here following the same structure -->
+  <!-- Publication 3 -->
+  <div class="pub-card">
+    <div class="pub-title">Robust neural tracking of linguistic speech representations using a convolutional neural network</div>
+    <div class="pub-authors"><b>C. Puffay</b>, J. Vanthornhout, M. Gillis, B. Accou, H. Van Hamme, T. Francart</div>
+    <div class="pub-journal">Journal of Neural Engineering, IOP Publishing, 2023</div>
+    <div class="pub-buttons">
+      <a href="#" target="_blank" class="pub-button">DOI</a>
+      <button class="pub-button" onclick="alert('@article{puffay2023cnn,\ntitle={Robust neural tracking of linguistic speech representations using a convolutional neural network},\nauthor={Puffay, Corentin and Vanthornhout, J and Gillis, M and Accou, B and Van Hamme, H and Francart, T},\njournal={Journal of Neural Engineering},\nyear={2023}\n}')">Cite</button>
+      <a href="#" class="pub-button">PDF</a>
+    </div>
+  </div>
 
-  <a href="index.html" class="back-link">← Back to Home</a>
-</body>
-</html>
+  <!-- Publication 4 -->
+  <div class="pub-card">
+    <div class="pub-title">Auditory EEG decoding challenge for ICASSP 2024</div>
+    <div class="pub-authors">L. Bollens, <b>C. Puffay</b>, B. Accou, J. Vanthornhout, H. Van Hamme, T. Francart</div>
+    <div class="pub-journal">IEEE ICASSP 2024</div>
+    <div class="pub-buttons">
+      <a href="#" target="_blank" class="pub-button">DOI</a>
+      <button class="pub-button" onclick="alert('@inproceedings{bollens2024icaspp,\ntitle={Auditory EEG decoding challenge for ICASSP 2024},\nauthor={Bollens, L and Puffay, C and Accou, B and Vanthornhout, J and Van Hamme, H and Francart, T},\nbooktitle={IEEE ICASSP 2024},\nyear={2024}\n}')">Cite</button>
+      <a href="#" class="pub-button">PDF</a>
+    </div>
+  </div>
+
+  <!-- Publication 5 -->
+  <div class="pub-card">
+    <div class="pub-title">Detecting Post-Stroke Aphasia Via Brain Responses to Speech in a Deep Learning Framework</div>
+    <div class="pub-authors">P. De Clercq, <b>C. Puffay</b>, J. Kries, H. Van Hamme, M. Vandermosten, T. Francart, J. Vanthornhout</div>
+    <div class="pub-journal">IEEE EMBC 2024</div>
+    <div class="pub-buttons">
+      <a href="#" target="_blank" class="pub-button">DOI</a>
+      <button class="pub-button" onclick="alert('@inproceedings{declercq2024,\ntitle={Detecting Post-Stroke Aphasia Via Brain Responses to Speech in a Deep Learning Framework},\nauthor={De Clercq, P and Puffay, C and Kries, J and Van Hamme, H and Vandermosten, M and Francart, T and Vanthornhout, J},\nbooktitle={IEEE EMBC 2024},\nyear={2024}\n}')">Cite</button>
+      <a href="#" class="pub-button">PDF</a>
+    </div>
+  </div>
+
+  <!-- Publication 6 -->
+  <div class="pub-card">
+    <div class="pub-title">Classifying coherent versus nonsense speech perception from EEG using linguistic speech features</div>
+    <div class="pub-authors"><b>C. Puffay</b>, J. Vanthornhout, M. Gillis, P. De Clercq, B. Accou, H. Van Hamme, T. Francart</div>
+    <div class="pub-journal">Scientific Reports 14, 18922 (2024)</div>
+    <div class="pub-buttons">
+      <a href="#" target="_blank" class
