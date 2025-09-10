@@ -11,11 +11,11 @@
       padding: 0;
       background-color: #fff;
       color: #222;
-      line-height: 1.7;
+      line-height: 1.8;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      font-size: 18px;
+      font-size: 19px; /* Increased base font size */
     }
 
     a {
@@ -57,7 +57,7 @@
     }
 
     header div.header-text .affiliation {
-      font-size: 1.2em;
+      font-size: 1.3em; /* slightly larger for visibility */
       color: #333;
       margin-top: 4px;
     }
@@ -69,11 +69,11 @@
       padding: 0 60px;
     }
 
-    .about {
-      margin-bottom: 50px;
+    section {
+      margin-bottom: 60px;
     }
 
-    .about h2 {
+    .section-title {
       font-size: 2em;
       margin-bottom: 20px;
       color: #007acc;
@@ -82,8 +82,14 @@
     }
 
     .about p {
-      margin-bottom: 1.2em;
-      font-size: 1.1em;
+      margin-bottom: 1.3em;
+      font-size: 1.2em; /* bigger text for readability */
+    }
+
+    .education ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      font-size: 1.2em;
     }
 
     .button-group {
@@ -150,16 +156,18 @@
         <a href="publications.html" class="button">Publications</a>
         <a href="CV_Corentin.pdf" class="button">CV</a>
         <a href="https://github.com/corentinpuffay" class="button" target="_blank">GitHub</a>
-        <a href="https://scholar.google.com/citations?hl=en&user=lmFkzacAAAAJ" class="button" target="_blank">Google Scholar</a>
-        <a href="mailto:corentin.puffay@gmail.com" class="button">Contact</a>
-        <a href="https://www.linkedin.com/in/corentin-puffay-389863151" class="button" target="_blank">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=YOUR_ID" class="button" target="_blank">Google Scholar</a>
+        <a href="mailto:your.email@domain.com" class="button">Contact</a>
+        <a href="https://www.linkedin.com/in/YOUR_PROFILE" class="button" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/YOUR_HANDLE" class="button" target="_blank">Twitter</a>
       </div>
     </div>
   </header>
 
   <main>
+    <!-- About Me Section -->
     <section class="about">
-      <h2>About me</h2>
+      <h2 class="section-title">About me</h2>
       <p>
         I am a postdoctoral researcher at KU Leuven with a strong interest in neuroscience and artificial intelligence. 
         I am affiliated with the ExpORL group (<a href="https://www.kuleuven.be/english/research/people/tom-francart" target="_blank">Prof. Tom Francart</a>) 
@@ -173,6 +181,15 @@
         In June 2025, I obtained my Ph.D. in Electrical Engineering & Biomedical Sciences, focusing on relating continuous speech to brain signals using deep learning architectures, 
         ranging from convolutional networks to transformers. I also apply my models to study speech processing in different populations, including aphasia and epilepsy.
       </p>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+      <h2 class="section-title">Education</h2>
+      <ul>
+        <li>Ph.D. in Electrical Engineering & Biomedical Sciences, KU Leuven, 2025</li>
+        <li>Master’s in [Your Field], EPFL, [Year]</li>
+      </ul>
     </section>
   </main>
 
