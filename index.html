@@ -2,24 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Website</title>
+  <title>Corentin Puffay</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 40px;
       background: #f9f9f9;
       color: #333;
+      text-align: center;
     }
     h1 {
       color: #007acc;
     }
+    .button {
+      display: inline-block;
+      margin: 15px;
+      padding: 15px 30px;
+      font-size: 18px;
+      color: white;
+      background-color: #007acc;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background-color: #005f99;
+    }
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
   </style>
 </head>
 <body>
-  <h1>Corentin Puffay 👋</h1>
-  <p>Welcome to my personal website hosted with GitHub Pages!</p>
-  <p>I am a researcher fascinated by neuroscience and deep learning. At EPFL, I developed a strong engineering foundation through coursework in programming, machine learning, and neuroscience. 
-My Ph.D. at KU Leuven focuses on relating continuous speech to brain signals (EEG) using novel deep learning architectures ranging from convolutional networks to transformers. I also leverage the use of recent large language models to extract meaningful language representations to predict brain responses from invasive (electrocorticography) and noninvasive recording modalities. The goal is to model speech processing in the brain and develop novel EEG-based diagnostic tools and hearing prostheses, as well as to understand the mechanisms underlying language processing in the brain.</p>
-  <p><a href="https://github.com/username">My GitHub</a></p>
+  <h1>Corentin Puffay</h1>
+  
+  <div class="content">
+    <p>Welcome to my personal website hosted with GitHub Pages!</p>
+    <p>
+      I am a researcher fascinated by neuroscience and deep learning. 
+      At EPFL, I developed a strong engineering foundation through coursework in programming, 
+      machine learning, and neuroscience. 
+      My Ph.D. at KU Leuven focuses on relating continuous speech to brain signals (EEG) using novel 
+      deep learning architectures ranging from convolutional networks to transformers. 
+      I also leverage the use of recent large language models to extract meaningful language 
+      representations to predict brain responses from invasive (electrocorticography) and noninvasive 
+      recording modalities. 
+      The goal is to model speech processing in the brain and develop novel EEG-based diagnostic tools 
+      and hearing prostheses, as well as to understand the mechanisms underlying language processing 
+      in the brain.
+    </p>
+    <p><a href="https://github.com/username">My GitHub</a></p>
+  </div>
+
+  <!-- Buttons for CV and Publications -->
+  <a href="publications.html" class="button">Publications</a>
+  <a href="cv.pdf" class="button">CV</a>
+
 </body>
 </html>
